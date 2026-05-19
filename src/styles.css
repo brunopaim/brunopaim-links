@@ -38,34 +38,34 @@
 
 :root {
   --radius: 0.875rem;
-  --background: oklch(0.16 0.025 260);
-  --foreground: oklch(0.97 0.005 250);
-  --card: oklch(0.21 0.03 260);
-  --card-foreground: oklch(0.97 0.005 250);
-  --popover: oklch(0.21 0.03 260);
-  --popover-foreground: oklch(0.97 0.005 250);
-  --primary: oklch(0.7 0.18 255);
-  --primary-foreground: oklch(0.15 0.02 260);
-  --secondary: oklch(0.28 0.04 260);
-  --secondary-foreground: oklch(0.97 0.005 250);
-  --muted: oklch(0.25 0.03 260);
-  --muted-foreground: oklch(0.72 0.02 255);
-  --accent: oklch(0.32 0.05 270);
-  --accent-foreground: oklch(0.97 0.005 250);
+  --background: oklch(0.16 0.025 160);
+  --foreground: oklch(0.97 0.01 150);
+  --card: oklch(0.21 0.03 160);
+  --card-foreground: oklch(0.97 0.01 150);
+  --popover: oklch(0.21 0.03 160);
+  --popover-foreground: oklch(0.97 0.01 150);
+  --primary: oklch(0.72 0.16 155);
+  --primary-foreground: oklch(0.15 0.02 160);
+  --secondary: oklch(0.28 0.04 160);
+  --secondary-foreground: oklch(0.97 0.01 150);
+  --muted: oklch(0.25 0.03 160);
+  --muted-foreground: oklch(0.74 0.03 155);
+  --accent: oklch(0.32 0.05 160);
+  --accent-foreground: oklch(0.97 0.01 150);
   --destructive: oklch(0.62 0.22 25);
   --destructive-foreground: oklch(0.98 0.005 250);
-  --border: oklch(0.3 0.03 260 / 60%);
-  --input: oklch(0.3 0.03 260);
-  --ring: oklch(0.7 0.18 255);
-  --brand: oklch(0.7 0.19 255);
-  --brand-2: oklch(0.68 0.2 295);
+  --border: oklch(0.32 0.04 160 / 60%);
+  --input: oklch(0.3 0.04 160);
+  --ring: oklch(0.72 0.16 155);
+  --brand: oklch(0.74 0.17 150);
+  --brand-2: oklch(0.82 0.18 135);
 }
 
 @layer base {
   * { border-color: var(--color-border); }
   html { font-family: var(--font-sans); }
   body {
-    background: radial-gradient(ellipse at top, oklch(0.22 0.06 265) 0%, oklch(0.13 0.025 260) 60%, oklch(0.1 0.02 258) 100%);
+    background: radial-gradient(ellipse at top, oklch(0.22 0.06 160) 0%, oklch(0.13 0.025 160) 60%, oklch(0.1 0.02 158) 100%);
     background-attachment: fixed;
     color: var(--color-foreground);
     min-height: 100vh;
@@ -87,6 +87,6 @@
     border: 1px solid oklch(1 0 0 / 8%);
   }
   .ring-glow {
-    box-shadow: 0 0 0 1px oklch(1 0 0 / 8%), 0 20px 60px -20px oklch(0.4 0.2 260 / 50%);
+    box-shadow: 0 0 0 1px oklch(1 0 0 / 8%), 0 20px 60px -20px oklch(0.55 0.2 150 / 45%);
   }
 }

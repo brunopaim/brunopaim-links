@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Instagram, Linkedin, Github, ArrowUpRight, Sparkles } from "lucide-react";
 import { translations, type Lang } from "@/lib/i18n";
+import avatar from "@/assets/bruno-paim.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -63,10 +64,12 @@ function Index() {
 
         {/* Hero */}
         <section className="flex flex-col items-center text-center">
-          <div className="ring-glow relative rounded-full p-[2px]" style={{ background: "linear-gradient(135deg, var(--brand), var(--brand-2))" }}>
-            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-card font-display text-4xl font-semibold text-foreground sm:h-32 sm:w-32 sm:text-5xl">
-              BP
-            </div>
+          <div className="ring-glow relative rounded-full p-[3px]" style={{ background: "linear-gradient(135deg, var(--brand), var(--brand-2))" }}>
+            <img
+              src={avatar}
+              alt="Bruno Paim"
+              className="h-28 w-28 rounded-full object-cover sm:h-32 sm:w-32"
+            />
           </div>
 
           <h1 className="mt-6 text-3xl font-bold sm:text-4xl">{t.name}</h1>
