@@ -112,9 +112,9 @@ function Index() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass group flex items-center gap-4 rounded-xl px-4 py-4 transition-all hover:-translate-y-0.5 hover:border-[oklch(0.7_0.18_255_/_40%)]"
+                className="glass group flex items-center gap-4 rounded-xl px-4 py-4 transition-all hover:-translate-y-0.5 hover:border-[oklch(0.72_0.16_155_/_40%)]"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground transition-colors group-hover:bg-[oklch(0.7_0.18_255_/_20%)]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground transition-colors group-hover:bg-[oklch(0.72_0.16_155_/_20%)]">
                   <Icon size={20} />
                 </span>
                 <span className="flex-1 text-left">
@@ -130,7 +130,7 @@ function Index() {
         {/* Coming soon */}
         <section className="mt-10 glass rounded-2xl p-6">
           <div className="flex items-center gap-2">
-            <Sparkles size={18} className="text-[oklch(0.7_0.18_255)]" />
+            <Sparkles size={18} className="text-[oklch(0.72_0.16_155)]" />
             <h2 className="text-lg font-semibold sm:text-xl">{t.soonTitle}</h2>
           </div>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.soonText}</p>
