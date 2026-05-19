@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Instagram, Linkedin, Github, ArrowUpRight, Sparkles } from "lucide-react";
 import { translations, type Lang } from "@/lib/i18n";
+import avatar from "@/assets/bruno-paim.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -63,10 +64,12 @@ function Index() {
 
         {/* Hero */}
         <section className="flex flex-col items-center text-center">
-          <div className="ring-glow relative rounded-full p-[2px]" style={{ background: "linear-gradient(135deg, var(--brand), var(--brand-2))" }}>
-            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-card font-display text-4xl font-semibold text-foreground sm:h-32 sm:w-32 sm:text-5xl">
-              BP
-            </div>
+          <div className="ring-glow relative rounded-full p-[3px]" style={{ background: "linear-gradient(135deg, var(--brand), var(--brand-2))" }}>
+            <img
+              src={avatar}
+              alt="Bruno Paim"
+              className="h-28 w-28 rounded-full object-cover sm:h-32 sm:w-32"
+            />
           </div>
 
           <h1 className="mt-6 text-3xl font-bold sm:text-4xl">{t.name}</h1>
@@ -109,9 +112,9 @@ function Index() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass group flex items-center gap-4 rounded-xl px-4 py-4 transition-all hover:-translate-y-0.5 hover:border-[oklch(0.7_0.18_255_/_40%)]"
+                className="glass group flex items-center gap-4 rounded-xl px-4 py-4 transition-all hover:-translate-y-0.5 hover:border-[oklch(0.72_0.16_155_/_40%)]"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground transition-colors group-hover:bg-[oklch(0.7_0.18_255_/_20%)]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-foreground transition-colors group-hover:bg-[oklch(0.72_0.16_155_/_20%)]">
                   <Icon size={20} />
                 </span>
                 <span className="flex-1 text-left">
@@ -127,7 +130,7 @@ function Index() {
         {/* Coming soon */}
         <section className="mt-10 glass rounded-2xl p-6">
           <div className="flex items-center gap-2">
-            <Sparkles size={18} className="text-[oklch(0.7_0.18_255)]" />
+            <Sparkles size={18} className="text-[oklch(0.72_0.16_155)]" />
             <h2 className="text-lg font-semibold sm:text-xl">{t.soonTitle}</h2>
           </div>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.soonText}</p>
