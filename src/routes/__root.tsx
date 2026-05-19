@@ -77,6 +77,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Bruno Paim" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "Bruno Paim — Full-Stack Developer" },
+      { name: "twitter:title", content: "Bruno Paim — Full-Stack Developer" },
+      { property: "og:description", content: "Desenvolvimento, IA e produtos digitais — links e conteúdos de Bruno Paim." },
+      { name: "twitter:description", content: "Desenvolvimento, IA e produtos digitais — links e conteúdos de Bruno Paim." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/NZ8ZunMyQCcYaeqF1vRvWimYRP22/social-images/social-1779227391628-ChatGPT_Image_19_de_mai._de_2026,_18_49_40.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/NZ8ZunMyQCcYaeqF1vRvWimYRP22/social-images/social-1779227391628-ChatGPT_Image_19_de_mai._de_2026,_18_49_40.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
