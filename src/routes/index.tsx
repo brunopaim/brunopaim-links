@@ -79,6 +79,15 @@ function Index() {
           <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
             {t.hero}
           </p>
+
+          {/* Highlight badge */}
+          <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-[oklch(0.72_0.16_155_/_25%)] bg-[oklch(0.72_0.16_155_/_12%)] px-4 py-1.5 text-xs font-semibold tracking-wide text-[oklch(0.72_0.16_155)]">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[oklch(0.72_0.16_155)] opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[oklch(0.72_0.16_155)]" />
+            </span>
+            {t.highlight}
+          </div>
         </section>
 
         {/* About */}
@@ -87,8 +96,34 @@ function Index() {
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.about}</p>
         </section>
 
+        {/* Journey */}
+        <section className="mt-10">
+          <h2 className="mb-4 text-lg font-semibold sm:text-xl">{t.journeyTitle}</h2>
+          <div className="flex flex-col gap-3">
+            {t.journey.map((item, i) => (
+              <div
+                key={i}
+                className="glass relative rounded-2xl p-5 transition-all hover:-translate-y-0.5 hover:border-[oklch(0.72_0.16_155_/_25%)]"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold">{item.title}</h3>
+                    {item.institution && (
+                      <p className="mt-0.5 text-xs text-muted-foreground">{item.institution}</p>
+                    )}
+                    <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{item.description}</p>
+                  </div>
+                  <span className="shrink-0 rounded-full bg-[oklch(0.72_0.16_155_/_12%)] px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-[oklch(0.72_0.16_155)]">
+                    {item.period}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Tech */}
-        <section className="mt-8">
+        <section className="mt-10">
           <h2 className="mb-4 text-lg font-semibold sm:text-xl">{t.techTitle}</h2>
           <div className="flex flex-wrap gap-2">
             {techs.map((tech) => (
