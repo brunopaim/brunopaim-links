@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Instagram, Linkedin, Github, ArrowUpRight, Sparkles } from "lucide-react";
+import { Instagram, Linkedin, Github, Youtube, ArrowUpRight, Sparkles } from "lucide-react";
 import { translations, type Lang } from "@/lib/i18n";
 import avatar from "@/assets/bruno-paim.png";
 
@@ -22,6 +22,7 @@ const links = [
   { name: "Instagram", href: "https://www.instagram.com/brunopaim.dev", icon: Instagram, handle: "@brunopaim.dev" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/bruno-william-paim-342b171b0/", icon: Linkedin, handle: "Bruno William Paim" },
   { name: "GitHub", href: "https://github.com/brunopaim/", icon: Github, handle: "@brunopaim" },
+  { name: "YouTube", href: "https://www.youtube.com/@BrunoPaimDev", icon: Youtube, handle: "@BrunoPaimDev" },
 ];
 
 function Index() {
