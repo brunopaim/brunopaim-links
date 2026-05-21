@@ -18,7 +18,7 @@ export const translations = {
       },
       {
         title: "Engenharia Mecatrônica",
-        institution: "IFNMG",
+        institution: "CEFET-MG",
         period: "2018 — 2024",
         description: "Formação multidisciplinar envolvendo tecnologia, automação, sistemas, eletrônica, controle e resolução de problemas complexos.",
       },
@@ -51,7 +51,7 @@ export const translations = {
       },
       {
         title: "Mechatronics Engineering",
-        institution: "IFNMG",
+        institution: "CEFET-MG",
         period: "2018 — 2024",
         description: "Multidisciplinary education involving technology, automation, systems, electronics, control, and complex problem-solving.",
       },
